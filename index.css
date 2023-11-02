@@ -68,7 +68,7 @@ nav {
     margin-top: 65px;
     border-radius: 5px;
     border: none;   
-    
+    cursor: pointer;
 }
 
 .footer{
@@ -87,4 +87,51 @@ nav {
 
 .aboutImage{
     width: 100%;
+}
+
+.aboutMain{
+    margin: 26px;
+}
+
+.aboutLow{
+    margin-top: 55px;
+    background-color: FFCC8D;
+    height: 200px;
+    border: none;
+    border-radius: 5px;    
+}
+
+.abouth1{
+    font-family: Inter;
+    font-weight: bold;
+    font-size: 32;
+}
+
+.abouth2{
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 16;
+}
+
+.aboutLow2{
+    padding-top: 32px;
+    margin-left: 37px;
+    margin-right: 37px;
+    margin-bottom: 25px;
+    font-family: Inter;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.aboutButton{
+    margin-left: 37px;
+    width: 175px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Inter;
+    border-radius: 10px;
+    cursor: pointer;
 }
