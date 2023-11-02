@@ -7,3 +7,84 @@ html, body {
     padding: 0;
 }
 
+.linksDiv > a {    
+    text-decoration: none;  
+    margin: 10px;  
+    font-size: 16;
+    font-weight: 600;
+    color: black;
+}
+.linksDiv{
+    
+    text-decoration: none; 
+    margin-top: auto;
+    margin-bottom: auto;
+}
+nav {
+    display: flex;
+    background-color: FFF7ED;
+    width: auto;
+    justify-content: space-between;
+    height: 111px;
+    margin-bottom: 0px;
+    
+}
+
+.navHeader{
+    margin-left: 26px;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 25;
+    font-family: Inter;    
+    font-weight: 900;
+}
+
+.home{
+    background-image: url('/public/images/image53.png');
+    height: 550px;   
+    display: flex;
+    flex-direction: column; 
+}
+
+.homeTexth1, .homeTextp, .homeButton{
+    color: white;
+    margin-left: 26px;
+    margin-right: 26px;   
+    font-display: block; 
+}
+
+.homeTexth1{
+    padding-top: 65px;
+    font-family: Inter;
+    font-weight: 800;
+    font-size: 35;
+    margin-top: 0px;
+}
+
+.homeButton{
+    background-color: FF8C38;
+    width: calc(100% - 54px);
+    height: 50px;
+    margin-top: 65px;
+    border-radius: 5px;
+    border: none;   
+    
+}
+
+.footer{
+    color: AAAAAA;
+    height: 75px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+
+}
+
+.footer > p{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.aboutImage{
+    width: 100%;
+}

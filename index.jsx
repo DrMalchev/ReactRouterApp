@@ -1,24 +1,26 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter, Routes, Route } from "react-router-dom"
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom"
+import Home from './components/Home'
+import About from './components/About'
+import Navigation from './components/Navigation'
+import "@fontsource/inter"; // Defaults to weight 400
+import Footer from './components/Footer'
 
-function App() {
+function App(){
   return (
-    <h1>Hello world!</h1>
-  )
-}
-
-function About() {
-  return (
-    <h1>About page comes here!</h1>
+    <BrowserRouter>
+    
+      <Navigation />
+      <Routes>
+        <Route path="/" element={<Home/>}/>
+        <Route path="/about" element={<About />} />
+      </Routes>
+      <Footer></Footer>
+    </BrowserRouter>
   )
 }
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <BrowserRouter>
-    <Routes>
-      <Route path="/" element={<App/>}/>
-      <Route path="/about" element={<About />} />
-    </Routes>
-  </BrowserRouter>
+  <App />
 );
