@@ -5,6 +5,7 @@
 html, body {
     margin: 0;
     padding: 0;
+    background-color: FFF7ED;
 }
 
 .linksDiv > a {    
@@ -19,6 +20,7 @@ html, body {
     text-decoration: none; 
     margin-top: auto;
     margin-bottom: auto;
+    margin-right: 16px;
 }
 nav {
     display: flex;
@@ -81,7 +83,7 @@ nav {
     background-color: black;
     display: flex;
     justify-content: center;
-
+    margin-top: 80px;
 }
 
 .footer > p{
@@ -138,4 +140,75 @@ nav {
     font-family: Inter;
     border-radius: 10px;
     cursor: pointer;
+}
+
+.vansFilters{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.vansList{
+    margin-left: 26px;
+    margin-right: 26px;    
+}
+
+.vansArray{
+    display: grid;  
+    grid-template-columns: 1fr 1fr;
+    column-gap: 34px;
+}
+
+.vanCardImg{
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.vanCard{
+    margin-top: 26px;
+}
+
+.vanCardNamePrice{    
+    display: flex;
+    justify-content: space-between;
+}
+
+.vanCardName, .vanCardPrice{
+    margin: 0px;
+}
+
+.vanCardType{
+    
+    width: 86px;
+    height: 34px;
+    display: flex;
+    justify-content: center;
+    line-height: 34px;
+    text-transform: capitalize;
+    border-radius: 5px;
+    border: none;
+    color: white;
+}
+
+.filterHeaders{
+    width: 104px;
+    height: 37px;
+    border: none;
+    border-radius: 5px;
+    background-color: FFEAD0;
+    display: flex;
+    justify-content: center;
+    line-height: 37px;
+}
+
+.clearFilters{
+    display: flex;
+    justify-content: center;
+    line-height: 37px;
+    text-decoration: underline;
+}
+
+.priceColor{
+    font-size: 20px;
+    font-weight: 600;
 }

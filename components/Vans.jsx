@@ -29,15 +29,15 @@ export default function(){
     }
     
     return (
-        <div>
+        <div className='vansList'>
             <h1>Explore our van options</h1>
             <div className='vansFilters'>
-            <div>Simmple</div>
-            <div>Luxury</div>
-            <div>Rugged</div>
-            <div>Clear filters</div>
+            <div className='filterHeaders'>Simmple</div>
+            <div className='filterHeaders'>Luxury</div>
+            <div className='filterHeaders'>Rugged</div>
+            <div className='clearFilters'>Clear filters</div>
             </div>
-            <div className='vansList'>   
+            <div className='vansArray'>   
                 {vansArray}
             </div>
         </div>
