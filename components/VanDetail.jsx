@@ -1,8 +1,10 @@
 import React from 'react'
+import { useParams } from 'react-router-dom'
 
-export default function VanDetail(props){   
-    console.log(props) 
+export default function VanDetail(){   
+    const params = useParams()
+    console.log(params)
     return(
-        <h1>This is van detail page for {props.id}</h1>
+        <h1>This is van detail page for {params.id}</h1>
     )
 }
