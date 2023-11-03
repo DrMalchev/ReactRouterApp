@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 
 export default function VanCard(props){
     var color = "E17654"
@@ -16,13 +17,13 @@ export default function VanCard(props){
     }
     
     return(
-        <div className='vanCard'>
+        <Link to={`/vans/${props.id}`} className='vanCard'>
             <img className='vanCardImg' src={props.imageUrl} alt="" />
             <div className='vanCardNamePrice'>
             <h3 className='vanCardName'>{props.name}</h3>
             <p className='vanCardPrice'><span className='priceColor'>${props.price}</span><br/>/day</p>
             </div>            
             <div style={styles}className='vanCardType'>{props.type}</div>
-        </div>
+        </Link>
     )
 }

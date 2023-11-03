@@ -166,6 +166,9 @@ nav {
 
 .vanCard{
     margin-top: 26px;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
 }
 
 .vanCardNamePrice{    

@@ -12,7 +12,8 @@ export default function(){
         .then(data => setVans(data))
 
     },[])    
-    
+        
+
     var vansArray = [];
     if(vans.vans && vans.vans.length)
     {
@@ -23,7 +24,9 @@ export default function(){
             imageUrl={x.imageUrl}
             name = {x.name}
             price = {x.price}
-            type = {x.type}
+            type = {x.type}   
+            id = {x.id}
+            description={x.description}        
             />
         }) 
     }

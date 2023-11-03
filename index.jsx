@@ -7,7 +7,9 @@ import Vans from  './components/Vans'
 import Navigation from './components/Navigation'
 import "@fontsource/inter"; // Defaults to weight 400
 import Footer from './components/Footer'
+import VanDetail from './components/VanDetail'
 import "./server"
+
 
 function App(){
   return (
@@ -18,6 +20,7 @@ function App(){
         <Route path="/" element={<Home/>}/>
         <Route path="/about" element={<About />} />
         <Route path="/vans" element={<Vans />} />
+        <Route path="/vans/:id" element={<VanDetail />} />
       </Routes>
       <Footer></Footer>
     </BrowserRouter>
