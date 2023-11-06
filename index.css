@@ -52,10 +52,8 @@ nav {
     flex-direction: column; 
 }
 
-.homeTexth1, .homeTextp, .homeButton{
-    color: white;
-    margin-left: 26px;
-    margin-right: 26px;   
+.homeTexth1, .homeTextp{
+    color: white;       
     font-display: block; 
 }
 
@@ -83,7 +81,7 @@ nav {
     background-color: black;
     display: flex;
     justify-content: center;
-    margin-top: 80px;
+    
 }
 
 .footer > p{
@@ -129,7 +127,11 @@ nav {
     font-size: 24px;
 }
 
+
 .aboutButton{
+    display: flex;
+    justify-content: center;
+    line-height: 50px;
     margin-left: 37px;
     width: 175px;
     height: 50px;
@@ -140,6 +142,7 @@ nav {
     font-family: Inter;
     border-radius: 10px;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .vansFilters{
@@ -150,6 +153,7 @@ nav {
 .vansList{
     margin-left: 26px;
     margin-right: 26px;    
+    margin-bottom: 40px;
 }
 
 .vansArray{
@@ -214,4 +218,67 @@ nav {
 .priceColor{
     font-size: 20px;
     font-weight: 600;
+}
+
+.detailsContainer{
+    margin-left: 26px;
+    margin-right: 26px;
+    margin-bottom: 40px;
+}
+
+.detailsImg{
+    margin-top: 40px;
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+.detailsType{
+    width: 86px;
+    height: 34px;
+    display: flex;
+    justify-content: center;
+    line-height: 34px;
+    text-transform: capitalize;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background-color: E17654;
+}
+
+.detailsPriceBold{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.detailsButton{
+    background-color: FF8C38;
+    width: 100%;
+    height: 50px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: none;   
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    line-height: 50px;
+    color: white;
+}
+
+.homeContainer{
+    margin-left: 26px;
+    margin-right: 26px;
+}
+.homeButton{
+    background-color: FF8C38;
+    width: 100%;
+    height: 50px;    
+    margin-right: calc(100% - 54px);
+    border-radius: 5px;
+    border: none;   
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    line-height: 50px;
+    color: white;
+    text-decoration: none;
 }
