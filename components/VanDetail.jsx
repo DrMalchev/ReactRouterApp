@@ -21,10 +21,9 @@ export default function VanDetail(){
                 <div className='detailsType'>{vanData.type}</div>
                 <h1 className='detailsName'>{vanData.name}</h1>
                 <div className='detailsPrice'><span className='detailsPriceBold'>${vanData.price}</span> /day</div>
-                <div className='detailsDescr'>{vanData.description}</div>            
+                <div className='detailsDescr'>{vanData.description}</div>  
+                <div className='detailsButton'>Rent this van</div>          
             </div> : <h3>Loading ...</h3>}
-            
-            
         </div>
     )
 }
