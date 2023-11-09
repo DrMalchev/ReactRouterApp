@@ -22,7 +22,7 @@ html, body {
     margin-bottom: auto;
     margin-right: 16px;
 }
-nav {
+.mainNav {
     display: flex;
     background-color: FFF7ED;
     width: auto;
@@ -281,4 +281,14 @@ nav {
     line-height: 50px;
     color: white;
     text-decoration: none;
+}
+
+.hostNav{
+    margin: 26px;
+}
+
+.hostNavLink {
+    color: black;
+    text-decoration: none;
+    margin-right: 30px;
 }
