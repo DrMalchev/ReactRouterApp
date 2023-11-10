@@ -333,3 +333,55 @@ html, body {
   margin-bottom: auto;
     
 }
+
+.detailsContainer{
+    margin-left: 26px;
+    margin-right: 26px;
+
+}
+
+.commonCard{
+    margin-top: 20px;
+    background-color: white;
+
+}
+
+.commondCardImg{
+    width: 160px;
+    margin: 25px;
+}
+
+.commondCardImgNamePrice{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+.commonCardText{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.commonCardTextName{
+    font-size: 26px;
+    font-weight: bold;
+    margin: 0px;
+}
+
+.commonCardTextType{
+    text-transform: capitalize;
+    background-color: E17654;
+    width: 70px;
+    height: 28px;
+    text-align: center;
+    line-height: 28px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.commonCardLinksContainer{
+    margin-left: 25px;
+}
+
+.commonCardNavLink{
+    margin-right: 20px;
+}
