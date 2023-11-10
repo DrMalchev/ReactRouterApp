@@ -297,3 +297,39 @@ html, body {
     text-decoration: none;
     margin-right: 30px;
 }
+
+.vansListContainer{
+    margin-left: 26px;
+    margin-right: 26px;    
+}
+
+.vanListCard{
+    background-color: white;
+    padding: 18px 24px;
+    margin-bottom: 15px;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    column-gap: 10px;    
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+.vanListImage{
+    width: 65px;
+    border-radius: 5px;
+}
+
+.vanListh3{
+    margin: 0px;
+}
+
+.vanListp{
+    margin: 0px;
+}
+
+.vanListTextDiv{
+  margin-top: auto;
+  margin-bottom: auto;
+    
+}
