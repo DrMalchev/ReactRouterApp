@@ -7,6 +7,8 @@ import Vans from  './components/Vans'
 import Dashboard  from './components/host/Dashboard'
 import Income from './components/host/Income';
 import Reviews from './components/host/Reviews';
+import HostVans from './components/host/HostVans';
+import HostVansDetails from './components/host/HostVansDetails';
 import "@fontsource/inter"; // Defaults to weight 400
 import Footer from './components/Footer'
 import VanDetail from './components/VanDetail'
@@ -27,6 +29,8 @@ function App(){
             <Route index element={<Dashboard />} />
             <Route path="income" element={<Income />} />
             <Route path="reviews" element={<Reviews />} />
+            <Route path="vans" element={<HostVans />} />
+            <Route path="vans/:id" element={<HostVansDetails />} />
           </Route>
         </Route>
       </Routes>      
