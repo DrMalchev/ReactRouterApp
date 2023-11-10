@@ -18,7 +18,7 @@ export default function HostVansDetails(){
 
     return (        
         <div className="detailsContainer">            
-            <Link to='/host/vans'>Back to all vans</Link>
+            <Link to='..' relative='path'>Back to all vans</Link>
             {van? <CommonCard name={van.name} imageUrl={van.imageUrl} price={van.price} type={van.type}/> : "Loading..."}
 
         </div>

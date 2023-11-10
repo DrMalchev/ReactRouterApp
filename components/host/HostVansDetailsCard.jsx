@@ -1,7 +1,13 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, Outlet } from "react-router-dom";
 
 export default function CommonCard(props){
+    const activeStyle = {
+        fontWeight: "bold",
+        textDecoration: "underline",
+        color: "#161616"
+    }
+
     return(
         <div className="commonCard">
             <div className='commondCardImgNamePrice'>
@@ -13,16 +19,17 @@ export default function CommonCard(props){
                 </div>
             </div>
             <div className="commonCardLinksContainer">
-                <NavLink className='commonCardNavLink'>
+                <NavLink to='.' style={ (obj) => obj.isActive? activeStyle : null} className='commonCardNavLink'>
                     Details
                 </NavLink>
-                <NavLink className='commonCardNavLink'>
+                <NavLink to='pricing' style={ (obj) => obj.isActive? activeStyle : null} className='commonCardNavLink'>
                     Pricing
                 </NavLink>
-                <NavLink className='commonCardNavLink'>
+                <NavLink to='photos' style={ (obj) => obj.isActive? activeStyle : null} className='commonCardNavLink'>
                     Photos
                 </NavLink>
             </div>
+            <Outlet/>
         </div>
     )
 }
