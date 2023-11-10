@@ -14,7 +14,7 @@ export default function HostVans(){
        
     //console.log(vans)
     const vanListCards = vans? vans.map(x => {
-        return <VanListCard imageUrl={x.imageUrl} price={x.price} name={x.name} id={x.id} key={x.id}/>
+        return <VanListCard imageUrl={x.imageUrl} price={x.price} name={x.name} id={x.id} key={x.id} description={x.description}/>
     }) : "Loading..."
 
     return(

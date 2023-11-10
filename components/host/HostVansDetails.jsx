@@ -14,13 +14,12 @@ export default function HostVansDetails(){
         .then(data => setVan(data))        
     },[])
 
-    //console.log(van)
+    console.log(van)
 
     return (        
         <div className="detailsContainer">            
             <Link to='..' relative='path'>Back to all vans</Link>
-            {van? <CommonCard name={van.name} imageUrl={van.imageUrl} price={van.price} type={van.type}/> : "Loading..."}
-
+            {van? <CommonCard name={van.name} imageUrl={van.imageUrl} price={van.price} type={van.type} description={van.description}/> : "Loading..."}
         </div>
         
     )

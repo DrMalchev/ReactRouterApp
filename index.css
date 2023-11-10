@@ -384,4 +384,25 @@ html, body {
 
 .commonCardNavLink{
     margin-right: 20px;
+    text-decoration: none;
+    font-weight: 100;
+    color: black;
+}
+
+.detailsContainer2{
+    margin-left: 26px;
+    margin-right: 26px;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+.detailsContainer2Vspace{
+    margin-bottom: 20px;
+}
+
+.imagedetail{
+    width: 90%;
+    margin-left: 26px;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }

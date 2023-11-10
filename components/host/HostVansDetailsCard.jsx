@@ -18,8 +18,8 @@ export default function CommonCard(props){
                     <p>${props.price}/day</p>
                 </div>
             </div>
-            <div className="commonCardLinksContainer">
-                <NavLink to='.' style={ (obj) => obj.isActive? activeStyle : null} className='commonCardNavLink'>
+            <nav className="commonCardLinksContainer">
+                <NavLink to='.' end style={ (obj) => obj.isActive? activeStyle : null} className='commonCardNavLink'>
                     Details
                 </NavLink>
                 <NavLink to='pricing' style={ (obj) => obj.isActive? activeStyle : null} className='commonCardNavLink'>
@@ -28,8 +28,8 @@ export default function CommonCard(props){
                 <NavLink to='photos' style={ (obj) => obj.isActive? activeStyle : null} className='commonCardNavLink'>
                     Photos
                 </NavLink>
-            </div>
-            <Outlet/>
+            </nav>
+            <Outlet context={props}/>
         </div>
     )
 }
