@@ -1,10 +1,14 @@
 import React, {useEffect, useState} from 'react'
+import {useSearchParams, Link} from 'react-router-dom'
 import VanCard from '/components/VanCard.jsx'
 
 export default function(){
 
     const [vans, setVans] = useState([])
-   
+    const [searchParams, setSearchParams] = useSearchParams();
+    const typeFilter = searchParams.get("type")
+    console.log(typeFilter)
+
     useEffect(() => {
         fetch('/api/vans')
         .then(response => response.json()
@@ -17,7 +21,8 @@ export default function(){
     var vansArray = [];
     if(vans.vans && vans.vans.length)
     {
-        vansArray = vans.vans.map(x =>         
+        var vansFiltered = typeFilter? vans.vans.filter(x => x.type.toLowerCase() == typeFilter): vans.vans
+        vansArray = vansFiltered.map(x =>         
         {
             return <VanCard 
             key = {x.id}
@@ -35,10 +40,10 @@ export default function(){
         <div className='vansList'>
             <h1>Explore our van options</h1>
             <div className='vansFilters'>
-            <div className='filterHeaders'>Simmple</div>
-            <div className='filterHeaders'>Luxury</div>
-            <div className='filterHeaders'>Rugged</div>
-            <div className='clearFilters'>Clear filters</div>
+            <Link to='?type=simple' className='filterHeaders'>Simple</Link>
+            <Link to='?type=luxury' className='filterHeaders'>Luxury</Link>
+            <Link to='?type=rugged' className='filterHeaders'>Rugged</Link>
+            <Link to='.' className='clearFilters'>Clear filters</Link>
             </div>
             <div className='vansArray'>   
                 {vansArray}

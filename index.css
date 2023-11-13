@@ -211,6 +211,8 @@ html, body {
     display: flex;
     justify-content: center;
     line-height: 37px;
+    text-decoration: none;
+    color: black;
 }
 
 .clearFilters{
