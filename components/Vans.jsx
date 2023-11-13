@@ -40,10 +40,10 @@ export default function(){
         <div className='vansList'>
             <h1>Explore our van options</h1>
             <div className='vansFilters'>
-            <Link to='?type=simple' className='filterHeaders'>Simple</Link>
-            <Link to='?type=luxury' className='filterHeaders'>Luxury</Link>
-            <Link to='?type=rugged' className='filterHeaders'>Rugged</Link>
-            <Link to='.' className='clearFilters'>Clear filters</Link>
+            <button onClick={() => setSearchParams({type:"simple"})} className='filterHeaders'>Simple</button>
+            <button onClick={() => setSearchParams({type:"luxury"})} className='filterHeaders'>Luxury</button>
+            <button onClick={() => setSearchParams({type:"rugged"})} className='filterHeaders'>Rugged</button>
+            <a onClick={() => setSearchParams({})} className='clearFilters'>Clear filters</a>
             </div>
             <div className='vansArray'>   
                 {vansArray}

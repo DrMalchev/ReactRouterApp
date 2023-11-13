@@ -213,6 +213,12 @@ html, body {
     line-height: 37px;
     text-decoration: none;
     color: black;
+    cursor: pointer;
+}
+
+button.filterHeaders:hover, button.filterHeaders:focus{
+    color: white;
+    background-color: FF8C38;
 }
 
 .clearFilters{
@@ -220,6 +226,7 @@ html, body {
     justify-content: center;
     line-height: 37px;
     text-decoration: underline;
+    cursor: pointer;
 }
 
 .priceColor{
